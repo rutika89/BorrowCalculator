@@ -1,0 +1,81 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 33279088300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownClass()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1242515100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I try to register a station without an API key",
+            "match": {
+              "location": "WeatherAPIStepDefinition.registerStationWithoutKey()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2327100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I get error message in the response as \"Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.",
+                  "offset": 40
+                }
+              ],
+              "location": "WeatherAPIStepDefinition.verifyInvalidKeyErrorMsg(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "status code is 401",
+            "match": {
+              "location": "WeatherAPIStepDefinition.verifyStatusCode()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "WeatherAPI.feature"
+  }
+]

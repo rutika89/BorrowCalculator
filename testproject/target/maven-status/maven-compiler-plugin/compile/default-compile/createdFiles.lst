@@ -1,0 +1,4 @@
+testproject\pageObjects\BorrowCalcPage.class
+testproject\pageObjects\BasePage.class
+testproject\utils\WebDriverController.class
+testproject\utils\LoadProperties.class

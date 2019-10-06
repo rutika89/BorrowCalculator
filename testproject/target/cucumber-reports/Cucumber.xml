@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.523974">
+<testcase classname="Title of your feature" name="Title of your scenario" time="34.523974">
+<system-out><![CDATA[When I try to register a station without an API key.........................passed
+Then I get error message in the response as "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.".passed
+And status code is 401......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
